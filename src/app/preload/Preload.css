@@ -1,0 +1,24 @@
+
+.preload {
+    opacity: 1;
+    transform: scale(1);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #282c34; */
+    color: white;
+    z-index: 100;
+   
+  }
+  .back{
+    overflow: hidden;
+  }
+
+  .preload-contain{
+    z-index: 30;
+  }
+
+  .loaded{
+    display: none;
+  }

@@ -1,0 +1,86 @@
+.user-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid black;
+    overflow: hidden;
+    width: 24rem;
+  }
+  
+  .avatar {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+    transform-origin: top center; 
+  }
+  
+  .avatar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); 
+    border-radius: 50%;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .avatar.scale-up {
+    transform: scale(4) translateY(-30px);
+  }
+  
+  /* Show overlay when avatar is scaled */
+  .avatar.scale-up::before {
+    opacity: 1; /* Show overlay */
+  }
+  
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .name {
+    font-weight: bold;
+    font-size: 1.125rem;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .name.move-up {
+    transform: translateY(-20px); 
+  }
+  
+  .icon {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .icon.icon-visible {
+    opacity: 1;
+    transform: translateY(-30px); 
+  }
+  
+  @keyframes animation {
+    from {
+      opacity: 0;
+      transform: translateY(0px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(200px);
+    }
+  }
+  

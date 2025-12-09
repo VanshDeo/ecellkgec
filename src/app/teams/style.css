@@ -1,0 +1,44 @@
+.overlay {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .overlay-visible {
+    opacity: 1;
+  }
+  
+.icon {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+
+  .move-up {
+    color: white;
+  }
+
+  .icon.icon-visible {
+    opacity: 1;
+    transform: translateY(-20px); 
+    color: white;
+  }
+
+  /* Card hover effects */
+  .team-card {
+    transition: all 0.3s ease;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(247, 147, 30, 0.2);
+  }
+  
+  /* Image hover effects */
+  .profile-image {
+    transition: all 0.5s ease;
+  }
+  
+  .team-card:hover .profile-image {
+    transform: scale(1.05);
+  }

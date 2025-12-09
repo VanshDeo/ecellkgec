@@ -1,0 +1,369 @@
+.background {
+	background: linear-gradient(0deg, #000000, #000000, #fdfdfd, #ffffff);
+	background-size: 400% 400%;
+	animation: gradient 6.5s ;
+	margin: 0 auto;
+  display: block;
+  box-sizing: border-box;
+overflow: hidden;
+  height: 100vh;
+}
+
+
+@keyframes gradient {
+	
+	0% {
+		background-position:50% 100% ;
+	}
+    70% {
+		background-position:50% 100% ;
+    opacity: 1;
+	
+	}
+ 
+	100% {
+		background-position: 50% 0% ;
+    opacity: 0;
+	}
+}
+
+.cls-1 {
+    stroke :#FAFDFD ; 
+    stroke-width :3 ; 
+    fill : #FAFDFD ; 
+    stroke-dasharray : 1800 ; 
+    stroke-dashoffset : 0 ; 
+    animation : show 5s ;
+    opacity: 0;
+  }
+
+  .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+    stroke :#FAFDFD ; 
+    stroke-width :3 ; 
+    fill : #FAFDFD ; 
+    stroke-dasharray : 1800 ; 
+    stroke-dashoffset : 0 ; 
+    animation : show 5s  ;
+    opacity: 0;
+  }
+
+  .cls-2 {
+    stroke :#FAFDFD ; 
+    stroke-width :3 ; 
+    fill : #FAFDFD ; 
+    stroke-dasharray : 1800 ; 
+    stroke-dashoffset : 0 ; 
+    animation : show 5s ease-in-out infinite ;
+    opacity: 0;
+  }
+
+  .cls-3 {
+    stroke :#000000 ; 
+    stroke-width :3 ; 
+    fill : #000000 ; 
+    stroke-dasharray : 1800 ; 
+    stroke-dashoffset : 0 ; 
+    animation : show 5s ease-in-out infinite ;
+    opacity: 0;
+  }
+
+  .cls-4 {
+    stroke :#FAFDFD ; 
+    stroke-width :3 ; 
+    fill : #FAFDFD ; 
+    stroke-dasharray : 1800 ; 
+    stroke-dashoffset : 0 ; 
+    animation : show 5s ease-in-out infinite ;
+    opacity: 0;
+  }
+
+  .cls-6 {
+    stroke :#FAFDFD ; 
+    stroke-width :3 ; 
+    fill : #FAFDFD ; 
+    stroke-dasharray : 1800 ; 
+    stroke-dashoffset : 0 ; 
+    animation : show 5s  ;
+    opacity: 0;
+  }
+
+ 
+
+
+  @keyframes show { 
+    0% { 
+      fill : transparent ; 
+      stroke-dashoffset : 1800 ; 
+      opacity: 0;
+    }
+    20% { 
+      fill : transparent ; 
+      stroke-dashoffset : 1800 ; 
+      opacity: 1;
+    }
+    90% { 
+      fill : #FAFDFD ; 
+      stroke-dashoffset : 0 ;
+      opacity: 1;
+      
+    }
+    100% { 
+      fill : #FAFDFD ; 
+      stroke-dashoffset : 0 ;
+      opacity: 0;
+    }
+  }
+
+
+  
+  
+  .App {
+    font-family: sans-serif;
+    text-align: center;
+    
+   top: -500px;
+  }
+  .textScramble {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 15px;
+    padding: 10px 10px;
+   
+  }
+  .top1
+  {
+    top: -500px;
+  }
+
+  .textanime  {
+    
+    
+  top: 50%;
+    
+   
+    color: #fff;
+    font-family: "Roboto Mono";
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+     /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 5.0s ,
+      blink-caret .5s ;
+      opacity: 0;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+     
+   
+  }
+  
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    
+       
+   
+  
+  }
+ 
+  .logo{
+    margin: 0 auto;
+   
+    /* Center vertically and horizontally */
+    display: flex;
+    position: relative;
+    top: 10%;
+    justify-content: center;
+    align-items: center;
+    animation: logo 5s ;
+opacity: 0;
+  }
+  @keyframes logo {
+    
+    
+       
+      20%{
+          opacity: 0;
+      }
+      90%{
+          opacity: 1;
+      }
+      100%{
+          opacity: 0;
+      }
+  
+  }
+
+  .Prisma{
+    margin: 0 auto;
+    width: 50%;
+    top: 30%;
+ position: auto;
+    /* Center vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+  }
+  body{
+		background-image: "./1.png";
+	}
+  .top1{
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+bottom: 50%;
+
+  }
+
+  @media (min-width:320px)  {
+    .Prisma{
+position: absolute;
+right: 0%;
+    left: 0%;
+    bottom: 50%;
+    scale: 1.5;
+    }
+    .textall{
+
+    margin: 0% auto;
+    position: absolute;
+    bottom: 30%;
+    padding-top: 70%;
+font-size: 10px;
+    bottom: 0%;
+    scale: 0.8;
+    right: 10%;
+    left: 10%;
+  } /* smartphones, iPhone, portrait 480x320 phones */ }
+  @media (min-width:481px)  { .Prisma{
+    position: absolute;
+    right: 0%;
+        left: 0%;
+        bottom: 50%;
+        scale: 1.5;
+        }
+        .textall{
+    
+        margin: 0% auto;
+        position: absolute;
+        bottom: 30%;
+        padding-top: 70%;
+    font-size: 10px;
+        bottom: 0%;
+        scale: 0.8;
+        right: 10%;
+        left: 10%;
+      }/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+  @media (min-width:641px)  { 
+    .logo{
+      scale: 1.7;
+    }
+    .Prisma{
+    position: absolute;
+    right: 0%;
+        left: 0%;
+        
+        bottom: 30%;
+        scale: 1.5;
+        }
+        .textall{
+    
+        margin: 0% auto;
+        position: absolute;
+        bottom: 30%;
+        padding-top: 70%;
+    font-size: 10px;
+        bottom: 0%;
+        scale: 0.8;
+        right: 10%;
+        left: 10%;
+      }/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+  @media (min-width:961px)  {  .Prisma{
+    position: absolute;
+    right: 0%;
+        left: 0%;
+        top: 10%;
+        bottom: 0%;
+        scale: 0.5;
+        }
+        .textall{
+    
+        margin: 0% auto;
+        position: absolute;
+        bottom: 30%;
+        padding-top: 70%;
+    font-size: 10px;
+        bottom: 0%;
+        scale: 1;
+        right: 10%;
+        left: 10%;
+      }/* tablet, landscape iPad, lo-res laptops ands desktops */ }
+  @media (min-width:1025px) {  .logo{
+    scale: 1.5;
+  }
+    .Prisma{
+    position: absolute;
+    right: 0%;
+        left: 0%;
+        top: 10%;
+        bottom: 0%;
+        scale: 0.7;
+        }
+        .textall{
+    
+        margin: 0% auto;
+        position: absolute;
+        bottom: 0%;
+       
+    font-size: 10px;
+        bottom: 0%;
+        scale: 1;
+        right: 10%;
+        left: 10%;
+      }/* big landscape tablets, laptops, and desktops */ }
+  @media (min-width:1281px) { .logo{
+    scale: 1.5;
+  }
+    .Prisma{
+    position: absolute;
+    right: 0%;
+        left: 0%;
+        top: 10%;
+        bottom: 0%;
+        scale: 0.7;
+        }
+        .textall{
+    
+        margin: 0% auto;
+        position: absolute;
+        bottom: 0%;
+       
+    font-size: 10px;
+        bottom: 0%;
+        scale: 1;
+        right: 10%;
+        left: 10%;
+      }
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: .75px;
+        filter: drop-shadow(0px 0px 20px rgba(77, 76, 125, 0.4));
+      }
+  /* hi-res laptops and desktops */ }
+  svg .shadow1 { 
+    cursor:crosshair; 
+    -moz-box-shadow: -5px -5px 5px #888;
+    -webkit-box-shadow: -5px -5px 5px #888;
+    box-shadow: -5px -5px 5px #888; 
+  }

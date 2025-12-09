@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+  
+  .animation-delay-900 {
+    animation-delay: 900ms;
+  }
+  
+  .animate-slideInWidth {
+    animation: slideInWidth 1.5s cubic-bezier(0.6, 0.05, -0.01, 0.95) forwards;
+    animation-delay: 1.3s;
+  }
+  
+  .animate-fadeInUp {
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+  }
+  
+  .animate-lineExpand {
+    animation: lineExpand 0.8s ease-out forwards;
+    animation-delay: 2s;
+    width: 0;
+  }
+  
+  .animate-lettersFadeIn {
+    animation: fadeInUp 0.2s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .animate-slideUp {
+    animation: slideUp 1.2s cubic-bezier(0.17, 0.67, 0.83, 0.67) forwards;
+    animation-delay: 1.5s;
+    transform: translateY(150%);
+  }
+}
+
+@keyframes slideInWidth {
+  from {
+    width: 100%;
+  }
+  to {
+    width: var(--target-width, 40%);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes lineExpand {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(150%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

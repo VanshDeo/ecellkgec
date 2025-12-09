@@ -1,0 +1,21 @@
+/* You can safely remove any unused classes from the previous card implementation */
+
+/* Add any additional custom styling needed for speakers section */
+.speaker-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.speaker-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Custom styling for arrows if needed */
+.custom-arrow {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.custom-arrow:hover {
+  opacity: 1;
+}
