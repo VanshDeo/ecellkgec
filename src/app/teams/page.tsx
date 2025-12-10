@@ -220,9 +220,9 @@ const Team = () => {
                       </div>
                     ))}
                   </div>
-                  <div className="flex flex-col text-center mt-8 max-w-2xl">
+                  {/* <div className="flex flex-col text-center mt-8 max-w-2xl">
                     <p className="text-base text-gray-600 leading-relaxed">{studentsData[0].description}</p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             )}
@@ -263,9 +263,9 @@ const Team = () => {
                     </div>
                   ))}
                 </div>
-                <div className="flex flex-col text-center mt-8 max-w-2xl">
+                {/* <div className="flex flex-col text-center mt-8 max-w-2xl">
                   <p className="text-base text-gray-600 leading-relaxed">{student.description}</p>
-                </div>
+                </div> */}
               </div>
             ))}
 
@@ -306,9 +306,9 @@ const Team = () => {
                       </div>
                     ))}
                   </div>
-                  <div className="flex flex-col text-center mt-8 max-w-2xl">
+                  {/* <div className="flex flex-col text-center mt-8 max-w-2xl">
                     <p className="text-base text-gray-600 leading-relaxed">{studentsDataConvenors[0].description}</p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             )}
